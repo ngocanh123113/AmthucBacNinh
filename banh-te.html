@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bánh tẻ Làng Chờ - Ẩm thực Bắc Ninh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        .detail-container{
+            width:85%;
+            margin:50px auto;
+            display:flex;
+            gap:40px;
+            align-items:stretch; /* làm hai bên cao bằng nhau */
+        }
+
+        /* BÊN TRÁI: ẢNH + NỘI DUNG */
+        .content-box{
+            width:50%;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+            line-height:1.8;
+        }
+
+        .content-box img{
+            width:100%;
+            height:300px;
+            object-fit:cover;
+            border-radius:10px;
+            margin-bottom:20px;
+        }
+
+        .content-box h2{
+            color:#b30000;
+            margin-bottom:15px;
+        }
+
+        /* BÊN PHẢI: VIDEO */
+        .video-box{
+            width:50%;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+        }
+
+        .video-box video{
+            width:100%;
+            height:100%;
+            max-height:500px;
+            border-radius:10px;
+            box-shadow:0 0 15px rgba(0,0,0,0.2);
+            object-fit:cover;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+            <h1>Ẩm thực Bắc Ninh</h1>
+            <p class="slogan">Vừa lòng khách đến vui lòng khách đi</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- NỘI DUNG CHI TIẾT -->
+    <div class="detail-container">
+
+        <!-- BÊN TRÁI -->
+        <div class="content-box">
+            <div>
+                <h2>Bánh tẻ Làng Chờ – Hương vị truyền thống Kinh Bắc</h2>
+
+                <img src="images/banh-te.jpg" alt="Bánh tẻ Làng Chờ">
+
+                <p>
+                    Bánh tẻ Làng Chờ là món ăn dân dã nổi tiếng của tỉnh Bắc Ninh,
+                    được làm từ bột gạo tẻ xay mịn, gói trong lá dong và hấp chín.
+                    Phần nhân gồm thịt băm, mộc nhĩ, hành khô được nêm nếm vừa phải.
+                </p>
+
+                <p>
+                    Điểm đặc biệt của bánh là lớp vỏ mềm mịn, không quá dẻo,
+                    kết hợp với phần nhân đậm đà bên trong. Khi bóc lớp lá,
+                    hương thơm dịu nhẹ lan tỏa đầy hấp dẫn.
+                </p>
+
+                <p>
+                    Đây không chỉ là món ăn quen thuộc mà còn là nét văn hóa
+                    ẩm thực đặc sắc của vùng đất Kinh Bắc.
+                </p>
+            </div>
+        </div>
+
+        <!-- BÊN PHẢI -->
+        <div class="video-box">
+            <video controls>
+                <source src="video/banh-te.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Nhóm 1- lớp 12A3 - THPT Yên Phong số 2 - Bắc Ninh</p>
+    </footer>
+
+</body>
+</html>
